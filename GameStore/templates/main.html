@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+  {% block head %}
+    {{ block.super }}
+  {% endblock %}
+  
+  <body>
+    {% block pagename %}
+      {{ block.super }}
+    {% endblock %}
+
+    {% block menu %}
+      {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+      <div class="container text-center">
+        <p></p>
+          <div class="row justify-content-start align-items-center">
+              <div class="col"><img src="{% static 'images/main_img.webp' %}" height="500rem"></div>
+              <div class="col"><p>{{text}}</p></div>
+          </div>
+      </div>
+      {{ block.super }}
+    {% endblock %}
+
+
+    
+  </body>
+</html>
