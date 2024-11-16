@@ -24,9 +24,10 @@
                 <div class="card" style="width: 16rem;">
                     <img src="{% static 'images/cover_game.webp' %}" class="card-img-top" alt="">
                     <div class="card-body">
-                    <h5 class="card-title">{{game.0}}</h5>
-                    <p class="card-text">{{game.1}}</p>
-                    <p class="card-price">1000$</p>
+                    <h5 class="card-title">{{game.title}}</h5>
+                    <p class="card-text">{{game.description}}</p>
+                    <p class="card-price">{{game.size}}Gb</p>
+                    <p class="card-price">{{game.cost}}RUR</p>
                     <a href="#" class="btn btn-primary">Купить</a>
                     </div>
                 </div>
