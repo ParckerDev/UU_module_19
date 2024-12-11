@@ -70,7 +70,7 @@ def sign_up(request):
 
 # get users
 def get_users(request):
-    users = [buyer.name.title() for buyer in Buyer.objects.all()]
+    users = [(buyer.name.title(), buyer.age, float(buyer.balance)) for buyer in Buyer.objects.all()]
     context = {
         'users': users
     }
